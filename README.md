@@ -1,5 +1,3 @@
-# fifo_uvm_verification
-RTL FIFO Design and Verification using SystemVerilog and UVM
 FIFO UVM Verification Project
 Overview
 This repository contains a complete UVM (Universal Verification Methodology) testbench for verifying a parameterized FIFO (First-In-First-Out) design. The testbench implements a comprehensive verification environment with reference model comparison, functional coverage, and formal assertions to ensure proper FIFO behavior.
@@ -79,6 +77,18 @@ The testbench achieves:
 81.77% code coverage
 Complete toggle coverage for DUT signals
 
+Simulation Results
+Cover Directives
+![Screenshot 2025-05-17 151709](https://github.com/user-attachments/assets/c19b21b0-b4d9-45e9-a261-09dc61698eee)
+The screenshot shows 100% coverage for all assertion cover points in the testbench, verifying key FIFO behaviors including full/empty conditions, read/write operations, and error states.
+Covergroups
+![Screenshot 2025-05-17 151648](https://github.com/user-attachments/assets/970a7068-ac41-4890-a63c-ff915d95d1de)
+
+All functional coverage groups have reached 100% coverage, ensuring that all important FIFO operational states and transitions were exercised during verification.
+Waveform Analysis
+![Screenshot 2025-05-17 151630](https://github.com/user-attachments/assets/4f9a3e97-23a4-42ab-aa78-e9f512379b4a)
+
+Waveform view showing FIFO interface signals during simulation, including control signals, data paths, and status flags from both the DUT and reference model.
 Running the Tests
 To run the simulation:
 
